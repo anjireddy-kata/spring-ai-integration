@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "b3f73dc4-7eaf-4065-8b4c-5b28b469d744",
+		"name": "open-ai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3152420",
+		"_collection_link": "https://releasedashboard.postman.co/workspace/Anji~01fb9b44-0970-46dd-9195-56044a7ead66/collection/3152420-b3f73dc4-7eaf-4065-8b4c-5b28b469d744?action=share&source=collection_link&creator=3152420"
+	},
+	"item": [
+		{
+			"name": "translate-text",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"translateFrom\":\"English\",\r\n    \"translateTo\":\"Hindi\",\r\n    \"textToTranslate\":\"Hello, How are you doing today?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/translations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"translations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dalle-e-images",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"promptText\": \"cat and dog\",\r\n    \"imageSize\":\"512x512\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/images",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"images"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

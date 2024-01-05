@@ -1,4 +1,5 @@
 spring:
   ai:
     openai:
-      api-key: 
+      api-key: sk-
+      image-generator-url: https://api.openai.com/v1/images/generations
